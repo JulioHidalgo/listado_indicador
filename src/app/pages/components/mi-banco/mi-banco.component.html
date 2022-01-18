@@ -1,0 +1,17 @@
+<div class="container">
+    <div class="d-flex justify-content-between float-right">
+        <div class="col d-flex ">
+            <div class="float-right">BancoChile - {{titulo}}</div>
+        </div>
+
+        <div class="col-3">
+            <div class="btn-group" role="group" aria-label="Basic outlined example">
+                <button type="button" class="btn btn-outline-bancochile btn mr-3"(click)="indicadorMensual()"> ListadoMensual</button>
+                <button type="button" class="btn btn-outline-bancochile btn ml-5"(click)="transferenciaDestinatario()">ListadoAnual</button>
+                <button type="button" class="btn btn-outline-bancochile btn"(click)="movimientoTransferencia()">Historial</button>
+              </div>
+        </div>
+    </div>
+    <h1><i class="fa fa-chart-bar m-2"></i>{{tituloAccion}}</h1>
+    <router-outlet></router-outlet>
+</div>

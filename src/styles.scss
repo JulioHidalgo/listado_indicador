@@ -1,0 +1,197 @@
+/* CSS Document By Julio Hidalgo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"); 
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body,
+html {
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+}
+
+body { margin: 0px; padding: 0px; color: #63656c; font-family: "Arial", Helvetica, sans-serif; }
+
+td {
+    text-align: center;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 28px;
+    line-height: 1.7;
+    color: #011C4D;
+    margin: 0px;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    line-height: 1.7;
+    color: #011C4D;
+    margin: 0px;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #011C4D;
+    margin: 0px;
+}
+
+.bg-pdd-20 {
+    padding: 20px 0;
+}
+
+.bg-min-h {
+    min-height: 65vh;
+    padding-bottom: 40px;
+}
+
+.modulo,.modulo-pdd { display: block; width: 100%; border-bottom: 1px solid rgba(0,0,0,.15); clear: both; padding: 15px 0; }
+.modulo-pdd { border: none; }
+
+.filtros input[type=date],.filtros input[type=text] {margin-bottom: 5px; margin-right: 5px; font-size: .9em; }
+.filtros .input-md { width: 150px; }
+.grafico { padding: 20px 0; }
+
+.reportes { padding: 15px 0; }
+.reportes-titulos { background-color: #f1f1f1; border-bottom: 2px solid #dddddd; }
+.reportes .panel-heading .reportes .panel-footer {margin-bottom: 100px; background-color: #f9f9f9; }
+.reportes .icono-filter { color: #333333; float: right; line-height: 150%; }
+.reportes .btn-group { margin: 0; }
+.reportes .btn-group :disabled { cursor: auto; }
+.reportes .btn-group .active { font-weight: bold;; }
+.reportes .tabla-check { width: 20px; }
+.reportes .table input[type=checkbox]:checked ~ .reportes .table tr { background-color: #999999; }
+
+
+.table>thead {
+    vertical-align: middle !important;
+    text-align: center;
+}
+
+.btn-bancochile { 
+    color: #ffffff; 
+    background-color: #011C4D; 
+    border-color: #130269; 
+  } 
+   
+  .btn-bancochile:hover, 
+  .btn-bancochile:focus, 
+  .btn-bancochile:active, 
+  .btn-bancochile.active, 
+  .open .dropdown-toggle.btn-bancochile { 
+    color: #ffffff; 
+    background-color: #2B5384; 
+    border-color: #130269; 
+  } 
+   
+  .btn-bancochile:active, 
+  .btn-bancochile.active, 
+  .open .dropdown-toggle.btn-bancochile { 
+    background-image: none; 
+  } 
+   
+  .btn-bancochile.disabled, 
+  .btn-bancochile[disabled], 
+  fieldset[disabled] .btn-bancochile, 
+  .btn-bancochile.disabled:hover, 
+  .btn-bancochile[disabled]:hover, 
+  fieldset[disabled] .btn-bancochile:hover, 
+  .btn-bancochile.disabled:focus, 
+  .btn-bancochile[disabled]:focus, 
+  fieldset[disabled] .btn-bancochile:focus, 
+  .btn-bancochile.disabled:active, 
+  .btn-bancochile[disabled]:active, 
+  fieldset[disabled] .btn-bancochile:active, 
+  .btn-bancochile.disabled.active, 
+  .btn-bancochile[disabled].active, 
+  fieldset[disabled] .btn-bancochile.active { 
+    background-color: #011C4D; 
+    border-color: #130269; 
+  } 
+   
+  .btn-bancochile .badge { 
+    color: #011C4D; 
+    background-color: #ffffff; 
+  }
+
+  .btn-outline-bancochile{
+      color:#011C4D;
+      border-color:#011C4D;
+    }
+    
+.btn-outline-bancochile:hover{
+    color:#fff;
+    background-color:#011C4D;
+    border-color:#011C4D;
+}
+
+.btn-check:focus+.btn-outline-bancochile,
+.btn-outline-bancochile:focus{
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.5)
+}
+.btn-check:active+.btn-outline-bancochile,
+.btn-check:checked+.btn-outline-bancochile,
+.btn-outline-bancochile.active,
+.btn-outline-bancochile.dropdown-toggle.show,
+.btn-outline-bancochile:active{
+    color:#fff;
+    background-color:#011C4D;
+    border-color:#011C4D;
+}
+.btn-check:active+.btn-outline-bancochile:focus,
+.btn-check:checked+.btn-outline-bancochile:focus,
+.btn-outline-bancochile.active:focus,
+.btn-outline-bancochile.dropdown-toggle.show:focus,
+.btn-outline-bancochile:active:focus{
+    box-shadow:0 0 0 .25rem rgba(13,110,253,.5)
+}
+.btn-outline-bancochile.disabled,
+.btn-outline-bancochile:disabled{
+    color:#011C4D;
+    background-color:transparent
+}
+
+.page-link{
+    color: #2b5384;;
+}
+
+.modal-header{
+    background-color:#2b5384;
+    color: #fff;
+}
+.modal__btn{
+    cursor: pointer;
+}
+
+.btn-close{
+    background-color: #fff;
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+::-webkit-scrollbar-track {
+    background-color: #fff;
+} 
+
+::-webkit-scrollbar-thumb {
+    background-color: #2b5384;
+} 
+
+::-webkit-scrollbar-corner {
+    background-color: black;
+}

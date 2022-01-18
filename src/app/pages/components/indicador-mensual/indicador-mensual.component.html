@@ -1,0 +1,235 @@
+<div class="body bg-pdd-20 bg-min-h">
+    <section class="container">
+        <div class="row">
+            <section class="filtros">
+                <div class="row">
+                    <div class="col-sm-6 col-xs-12">
+                        <h2><i class="fa fa-clipboard-list m-2"></i> Listado de indicadores Mensuales</h2>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="reportes mb-5">
+                        <div class="panel panel-default">
+                            <div class="panel-heading mt-3">
+                                <div class="table-responsive table stacktable">
+                                    <table class="table table-striped table-condensed table-bordered table-hover">
+                                        <thead class="reportes-titulos">
+                                            <tr>
+                                                <th class="tabla-check text-center">-</th>
+                                                <th><i class="fa fa-landmark m-2"></i>Unidad de fomento (UF)
+                                                </th>
+                                                <th><i class="fa fa-file-invoice-dollar m-2"></i>Indice de valor promedio (IVP)
+                                                </th>
+                                                <th><i class="fa fa-search-dollar m-2"></i>Dólar observado
+                                                </th>
+                                                <th><i class="fa fa-dollar-sign m-2"></i>Dólar acuerdo
+                                                </th>
+                                                <th><i class="fa fa-euro-sign m-2"></i>Euro
+                                                </th>
+                                                <th><i class="fa fa-hand-holding-usd m-2"></i>Indice de Precios al Consumidor (IPC)
+                                                </th>
+                                                <th><i class="fa fa-chart-pie m-2"></i>Unidad Tributaria Mensual (UTM)
+                                                </th>
+                                                <th><i class="far fa-chart-bar m-2"></i>Imacec
+                                                </th>
+                                                <th><i class="fa fa-chart-line m-2"></i>Tasa Política Monetaria (TPM)
+                                                </th>
+                                                <th><i class="far fa-copyright m-2"></i>Libra de Cobre
+                                                </th>
+                                       
+                                                <th><i class="fa fa-percent m-2"></i>Tasa de Desempleo
+                                                </th>
+                                                <th><i class="fab fa-bitcoin m-2"></i>Bitcoin
+                                                </th>
+                                                <th class="tabla-check text-center">-</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="n-align">
+                                           <tr>
+                                                <td class="tabla-check text-center">Código</td>
+                                                <td class="modal__btn" data-bs-toggle="modal" data-bs-target="#modal_uf">
+                                                  {{ indicadores.uf.codigo }}</td>
+                                                <td class="modal__btn" data-bs-toggle="modal" data-bs-target="#modal_ivp">{{ indicadores.ivp.codigo }}</td>
+                                                <td>{{ indicadores.dolar.codigo }}</td>
+                                                <td>{{ indicadores.dolar_intercambio.codigo }}</td>
+                                                <td>{{ indicadores.euro.codigo }}</td>
+                                                <td>{{ indicadores.ipc.codigo }}</td>
+                                                <td>{{ indicadores.utm.codigo }}</td>
+                                                <td>{{ indicadores.imacec.codigo }}</td>
+                                                <td>{{ indicadores.tpm.codigo }}</td>
+                                                <td>{{ indicadores.libra_cobre.codigo }}</td>
+                                                <td>{{ indicadores.tasa_desempleo.codigo }}</td>
+                                                <td>{{ indicadores.bitcoin.codigo }}</td>
+                                                <th class="tabla-check text-center"><input type="checkbox"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabla-check text-center">Unidad de Medida</td>
+                                                <td>{{ indicadores.uf.unidad_medida }}</td>
+                                                <td>{{ indicadores.ivp.unidad_medida }}</td>
+                                                <td>{{ indicadores.dolar.unidad_medida }}</td>
+                                                <td>{{ indicadores.dolar_intercambio.unidad_medida }}</td>
+                                                <td>{{ indicadores.euro.unidad_medida }}</td>
+                                                <td>{{ indicadores.ipc.unidad_medida }}</td>
+                                                <td>{{ indicadores.utm.unidad_medida }}</td>
+                                                <td>{{ indicadores.imacec.unidad_medida }}</td>
+                                                <td>{{ indicadores.tpm.unidad_medida }}</td>
+                                                <td>{{ indicadores.libra_cobre.unidad_medida }}</td>
+                                                <td>{{ indicadores.tasa_desempleo.unidad_medida }}</td>
+                                                <td>{{ indicadores.bitcoin.unidad_medida }}</td>
+                                                <th class="tabla-check text-center"><input type="checkbox"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabla-check text-center">Fecha</td>
+                                                <td>{{ indicadores.uf.fecha }}</td>
+                                                <td>{{ indicadores.ivp.fecha }}</td>
+                                                <td>{{ indicadores.dolar.fecha }}</td>
+                                                <td>{{ indicadores.dolar_intercambio.fecha }}</td>
+                                                <td>{{ indicadores.euro.fecha }}</td>
+                                                <td>{{ indicadores.ipc.fecha }}</td>
+                                                <td>{{ indicadores.utm.fecha }}</td>
+                                                <td>{{ indicadores.imacec.fecha }}</td>
+                                                <td>{{ indicadores.tpm.fecha }}</td>
+                                                <td>{{ indicadores.libra_cobre.fecha }}</td>
+                                                <td>{{ indicadores.tasa_desempleo.fecha }}</td>
+                                                <td>{{ indicadores.bitcoin.fecha }}</td>
+                                                <th class="tabla-check text-center"><input type="checkbox"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabla-check text-center">Valor</td>
+                                                <td>{{ indicadores.uf.valor }}</td>
+                                                <td>{{ indicadores.ivp.valor }}</td>
+                                                <td>{{ indicadores.dolar.valor }}</td>
+                                                <td>{{ indicadores.dolar_intercambio.valor }}</td>
+                                                <td>{{ indicadores.euro.valor }}</td>
+                                                <td>{{ indicadores.ipc.valor }}</td>
+                                                <td>{{ indicadores.utm.valor }}</td>
+                                                <td>{{ indicadores.imacec.valor }}</td>
+                                                <td>{{ indicadores.tpm.valor }}</td>
+                                                <td>{{ indicadores.libra_cobre.valor }}</td>
+                                                <td>{{ indicadores.tasa_desempleo.valor }}</td>
+                                                <td>{{ indicadores.bitcoin.valor }}</td>
+                                                <th class="tabla-check text-center"><input type="checkbox"></th>
+                                            </tr>
+                                            <tr>
+                                                <td class="tabla-check text-center"></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <td></td>
+                                                <th class="tabla-check text-center"><input type="checkbox"></th>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="panel-footer">
+                                    <div class="clearfix">
+                                        <nav aria-label="Page navigation example">
+                                            <ul class="pagination justify-content-center">
+                                              <li class="page-item disabled">
+                                                <a class="page-link">Anterior</a>
+                                              </li>
+                                              <li class="page-item"><a class="page-link" href="#">1</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                              <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                              <li class="page-item">
+                                                <a class="page-link" href="#">Siguiente</a>
+                                              </li>
+                                            </ul>
+                                          </nav>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>      
+            </section>
+        </div>
+    </section>
+</div>
+
+<!-- Modal UF-->
+<div class="modal fade" id="modal_uf" tabindex="-1" aria-labelledby="modal_uf" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modal_uf">
+              <td>{{ indicadores.uf.nombre }}</td>
+            </h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <table class="table">
+                <tbody>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>Codigo</td>
+                    <td>{{ indicadores.uf.codigo }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td>Unidad de Medida</td>
+                    <td>{{ indicadores.uf.unidad_medida }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td >Fecha</td>
+                    <td>{{ indicadores.uf.fecha }}</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"></th>
+                    <td >Valor</td>
+                    <td>{{ indicadores.uf.valor }}</td>
+                  </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Modal UF-->
+<div class="modal fade" id="modal_ivp" tabindex="-1" aria-labelledby="modal_ivp" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modal_ivp">
+            <td>{{ indicadores.ivp.nombre }}</td>
+          </h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <table class="table">
+              <tbody>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Codigo</td>
+                  <td>{{ indicadores.ivp.codigo }}</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td>Unidad de Medida</td>
+                  <td>{{ indicadores.ivp.unidad_medida }}</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td >Fecha</td>
+                  <td>{{ indicadores.ivp.fecha }}</td>
+                </tr>
+                <tr>
+                  <th scope="row"></th>
+                  <td >Valor</td>
+                  <td>{{ indicadores.ivp.valor }}</td>
+                </tr>
+              </tbody>
+            </table>
+      </div>
+    </div>
+  </div>
+</div>

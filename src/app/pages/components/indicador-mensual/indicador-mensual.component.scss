@@ -1,0 +1,29 @@
+.reportes-titulos {
+    background-color: #f1f1f1;
+    border-bottom: 2px solid #dddddd;
+}
+body {
+     margin: 0px; 
+     padding: 0px; 
+     color: #63656c; 
+     font-family: "Open Sans", Arial, Helvetica, sans-serif; 
+}
+
+.bg-pdd-20 {
+    padding: 20px 0;
+}
+
+.bg-min-h { 
+    min-height: 65vh; 
+    padding-bottom: 40px; 
+}
+.body { 
+    display: block; clear: both; 
+}
+.modulo, .modulo-pdd {
+    display: block;
+    width: 100%;
+    border-bottom: 1px solid rgba(0,0,0,.15);
+    clear: both;
+    padding: 15px 0;
+}
